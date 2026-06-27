@@ -1,0 +1,21 @@
+[project]
+name = "model-deployment"
+version = "0.1.0"
+description = "SuperKart sales forecasting: train an XGBoost pipeline and serve it via a Flask API + Streamlit UI"
+requires-python = ">=3.13"
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=2.1",
+    "scikit-learn>=1.6",
+    "xgboost>=3.0",
+    "joblib>=1.4",
+    "flask>=3.0",
+    "flask-cors>=5.0",
+    "gunicorn>=23.0",
+    "streamlit>=1.40",
+    "requests>=2.32",
+    "matplotlib>=3.9",
+    "seaborn>=0.13",
+    "ipykernel>=6.29",
+    "jupyterlab>=4.2",
+]
