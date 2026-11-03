@@ -17,5 +17,20 @@ dependencies = [
     "matplotlib>=3.9",
     "seaborn>=0.13",
     "ipykernel>=6.29",
-    "jupyterlab>=4.2",
+    "jupyterlab>=4.6.4,<4.7",
+]
+
+[tool.uv]
+# Floors for transitive packages named in open Dependabot alerts.
+# Upper bounds stay on the reviewed patch or minor line.
+constraint-dependencies = [
+    "anyio>=4.14.2,<4.15",
+    "certifi>=2026.10.18",
+    "gitpython>=3.2.1,<3.3",
+    "mistune>=3.3.3,<3.4",
+    "nbconvert>=7.17.2,<7.18",
+    "soupsieve>=2.9,<2.10",
+    "tornado>=6.6,<6.7",
+    "urllib3>=2.8.0,<2.9",
+    "werkzeug>=3.1.9,<3.2",
 ]
